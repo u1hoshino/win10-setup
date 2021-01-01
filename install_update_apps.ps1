@@ -41,7 +41,7 @@ foreach ( $bucket in $buckets ) {
     $bucket_registered = scoop bucket list | Select-String -Pattern $bucket -quiet 
     if ($bucket_registered -ne "True") {
         Write-Host "Bucket register: $bucket"
-        scoop bucket $app
+        scoop bucket $bucket
     } 
 }
 

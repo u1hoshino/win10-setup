@@ -40,8 +40,8 @@ Write-Host "Configuring Scoop buckets"
 foreach ( $bucket in $buckets ) {
     $bucket_registered = scoop bucket list | Select-String -Pattern $bucket -quiet 
     if ($bucket_registered -ne "True") {
-        Write-Host "Bucket register: $bucket"
-        scoop bucket $bucket
+        Write-Host "Bucket add: $bucket"
+        scoop bucket add $bucket
     } 
 }
 

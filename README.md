@@ -11,3 +11,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JfKrM'))
 ## Windows アプリ
 
 
+```
+iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JL7ln'))
+```
+
